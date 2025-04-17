@@ -9,7 +9,7 @@ import ollama
 
 # Sidebar Configuration
 st.sidebar.header("Configuration")
-MODEL_NAME = st.sidebar.text_input("Ollama Model", value="qwen2.5:0.5b")
+MODEL_NAME = st.sidebar.text_input("Ollama Model", value="mistral")
 
 # Main Streamlit UI
 st.title("Sketch Classifier with Ollama")
