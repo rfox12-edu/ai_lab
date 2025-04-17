@@ -43,7 +43,7 @@ if canvas_result.image_data is not None:
     promptText = st.text_area("Prompt", value=f"What is this image (encoded in base64) a sketch of?: {img_base64}", height=200)
 
     if st.button("Prompt AI"):
-        with st.spinner("Running Ollama with tool calling..."):
+        with st.spinner("Running Ollama..."):
             try:
                 response = ollama.chat(
                     model=MODEL_NAME,
